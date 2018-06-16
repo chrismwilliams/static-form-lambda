@@ -1,0 +1,24 @@
+service: contact-lambda
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  # Set the region to your preference
+  region: eu-west-2
+
+# Add the required plugins
+plugins:
+  - serverless-offline
+  - serverless-webpack
+
+# Function (lambda) we want to trigger
+functions:
+  # Important this and the below 'handler:' are the same as the handler.js exported method
+  contact:
+    handler: handler.contact
+    # This will be triggered on a post, 'http://some_awsurl/contact'
+    events:
+      - http:
+          path: contact
+          method: post
+          cors: true
