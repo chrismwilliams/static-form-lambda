@@ -33,3 +33,25 @@ $ serverless deploy function --function contact
 $ serverless offline start
 # This command will spin up a local server that allows you to test your function locally.
 ```
+
+## Form Example
+
+```html
+<!--
+  Simple form example, remember to add your form action route,
+  either AWS or localhost
+-->
+<form action="URL_HERE" method="post">
+  <label for="name">Name</label>
+  <input type="text" name="name" id="name">
+  <!-- Following input could easily be changed to a reCAPTCHA-->
+  <label for="honeypot">Please don't fill this in</label>
+  <input type="hidden" name="honeypot" autocomplete="off">
+  <!-- -->
+  <label for="reply_to">Email</label>
+  <input type="email" name="reply_to" id="reply_to">
+  <label for="message">Your Message</label>
+  <textarea name="message" id="message"></textarea>
+  <input type="submit" value="Submit">
+</form>
+```

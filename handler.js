@@ -21,7 +21,7 @@ module.exports.contact = (event, context, callback) => {
     to: "my_prefered_recipient@mail.com",
     from: formData.reply_to,
     subject: "New Static Contact Form Data",
-    // Remove next 2 props if not using a template
+    // ** Remove next 2 props if not using a template
     templateId: "My_Template_ID_From_SendGrid",
     // Substitutions replace the {{ }} in your SendGrid template, e.g. {{ name }}
     substitutions: {
@@ -29,6 +29,10 @@ module.exports.contact = (event, context, callback) => {
       email: formData.reply_to,
       message: formData.message
     }
+    // **
+
+    // Or simply dump the message without a SendGrid template
+    // text: formData.message
   };
 
   // send mail with defined transport object
