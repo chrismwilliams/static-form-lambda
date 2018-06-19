@@ -3,7 +3,7 @@ service: contact-lambda
 provider:
   name: aws
   runtime: nodejs6.10
-  # Set the region to your preference
+  # Set the AWS region to your preference, this is set to London.
   region: eu-west-2
 
 # Add the required plugins
