@@ -1,4 +1,15 @@
 {
+  "name": "static-form-lambda",
+  "version": "1.0.0",
+  "description": "Simple AWS lambda to handle contact form data",
+  "author": "Chris Williams",
+  "keywords": [
+    "aws",
+    "lambda",
+    "static form",
+    "SendGrid"
+  ],
+  "license": "ISC",
   "devDependencies": {
     "@sendgrid/mail": "^6.2.1",
     "babel-core": "^6.26.3",
