@@ -7,7 +7,7 @@ A simple AWS Lambda serverless template creating an api to post your form data t
 ## Requirements:
 
 - An [AWS](https://aws.amazon.com/) Account
-- Install serverless cli: `npm i -g serverless`
+- Install serverless cli: `npm install -g serverless`
   - Add your AWS credentials to [serverless](https://serverless.com/framework/docs/providers/aws/guide/credentials/)
 - A [SendGrid](https://sendgrid.com/) Account
   - An api [key](https://app.sendgrid.com/settings/api_keys), (_keep this handy as by default you have to add it to AWS after deploying_)
