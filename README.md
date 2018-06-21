@@ -22,11 +22,11 @@ A simple AWS Lambda serverless template creating an api to post your form data t
 ## Terminal Commands:
 
 ```bash
-$ serverless deploy
+$ serverless deploy -v
 # This pushes the whole thing to AWS, creating your personal endpoint to post your form data to
 # You can now view the lambda (aws > Lambda > Functions) and add your SendGrid API_KEY to the environment
 
-$ serverless deploy function --function contact
+$ serverless deploy function -f contact
 # Made changes to just the handler.js file?
 # Instead of deploying the whole thing again which can take a while, this just updates the Lambda.
 
